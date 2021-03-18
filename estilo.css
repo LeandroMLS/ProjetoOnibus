@@ -25,9 +25,124 @@ footer {
 input {
     width: 31px;
     height: 31px;
+    font-size: 11px;
+    background: transparent;
+    position: relative;
+    
 }
 
 input#A1 {
-    margin: 94px 31px;
-    background: transparent;
+    
+    top: 21%;
+    left: 15.5%;
+}
+
+input#A2 {
+    top: 21%;
+    left: 14.5%;
+}
+
+input#A3 {
+    top: 30.5%;
+    left: -19.9%
+}
+
+input#A4 {
+    top: 30.5%;
+    left: -20.7%
+}
+
+input#A5 {
+    top: 30.5%;
+    right: 14.5%;
+}
+
+input#A6 {
+    top: 23.5%;
+    left: 72%;
+}
+
+input#A7 {
+    top: 32.5%;
+    left: -2.5%;
+}
+
+input#A8 {
+    top: 32.5%;
+    left: -3.3%;
+}
+
+input#A9 {
+    top: 32.5%;
+    left: 2.5%;
+}
+
+input#A10 {
+    top: 32.5%;
+    right: -1.8%;
+}
+
+input#A11{
+    top: 34.5%;
+    left: 14.7%;
+}
+
+input#A12 {
+    top: 34.5%;
+    left: 14%;
+}
+
+input#A13 {
+    top: 34.5%;
+    left: 20%;
+}
+
+input#A14 {
+    top: 34.5%;
+    left: 19%;
+}
+
+input#A15 {
+    top: 43.07%;
+    right: -2%;
+}
+
+input#A16 {
+    top: 43.5%;
+    left: 72%;
+}
+
+input#A17 {
+    top: 51%;
+    left: 54%;
+}
+
+input#A18 {
+    top: 44.3%;
+    right: 20%;
+}
+
+input#A19 {
+    top: 51.7%;
+    right: 37.5%;
+}
+
+input#A20 {
+    top: 62.5%;
+    right: 55.5%;
+}
+
+input#A21 {
+    top: 55.7%;
+    left: 31.5%;
+}
+
+input#A22 {
+    top: 55.7%;
+    left: 37.5%;
+}
+
+input#A23 {
+    top: 55.7%;
+    left: 36.7%;
 }
