@@ -1,0 +1,33 @@
+body {
+    background-color:rgba(24, 167, 180, 0.663);
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+section {
+    background-image: url(Imagens/onibus.jpeg);
+    padding: 10px;
+    width: 200px;
+    height: 450px;
+    border-radius: 10px 10px 10px rgba(0, 0, 0, 0.663);
+    margin: auto;
+}
+
+footer {
+    font: italic;
+    font-size: 16px;
+    text-align: center;
+}
+
+input {
+    width: 31px;
+    height: 31px;
+}
+
+input#A1 {
+    margin: 94px 31px;
+    background: transparent;
+}
