@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(24, 167, 180, 0.663);
+  background-color: rgba(26, 120, 129, 0.663);
   position: relative;
   font-family: sans-serif;
 }
@@ -14,7 +14,7 @@ section {
   padding: 10px;
   width: 200px;
   height: 450px;
-  border-radius: 10px 10px 10px rgba(0, 0, 0, 0.663);
+  border-radius: 10px 10px 10px;
   margin: auto;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.76);
 }
@@ -26,11 +26,21 @@ footer {
 }
 
 input {
+  text-align: center;
   width: 31px;
   height: 31px;
-  font-size: 11px;
-  background: transparent;
+  font-size: 10.3px;
+  background: none;
   position: relative;
+  border-color: transparent;
+  border-radius: 3px;
+}
+
+input#motorista {
+    top: -10%;
+    width: 42px;
+    height: 42px;
+    left: 9%;
 }
 
 input#A1 {
@@ -45,42 +55,42 @@ input#A2 {
 
 input#A3 {
   top: 30.5%;
-  left: -19.9%;
+  left: -20.5%;
 }
 
 input#A4 {
   top: 30.5%;
-  left: -20.7%;
+  left: -21.7%;
 }
 
 input#A5 {
   top: 30.5%;
-  right: 14.5%;
+  right: 15.8%;
 }
 
 input#A6 {
   top: 23.5%;
-  left: 72%;
+  left: 71.9%;
 }
 
 input#A7 {
   top: 32.5%;
-  left: -2.5%;
+  left: -3%;
 }
 
 input#A8 {
   top: 32.5%;
-  left: -3.3%;
+  left: -4%;
 }
 
 input#A9 {
   top: 32.5%;
-  left: 2.5%;
+  left: 2%;
 }
 
 input#A10 {
   top: 32.5%;
-  right: -1.8%;
+  right: -1%;
 }
 
 input#A11 {
@@ -100,12 +110,12 @@ input#A13 {
 
 input#A14 {
   top: 34.5%;
-  left: 19%;
+  left: 18.5%;
 }
 
 input#A15 {
-  top: 43.07%;
-  right: -2%;
+  top: 43%;
+  right: -1%;
 }
 
 input#A16 {
@@ -120,32 +130,32 @@ input#A17 {
 
 input#A18 {
   top: 44.3%;
-  right: 20%;
+  right: 20.5%;
 }
 
 input#A19 {
   top: 51.7%;
-  right: 37.5%;
+  right: 38.3%;
 }
 
 input#A20 {
   top: 62.5%;
-  right: 55.5%;
+  right: 56%;
 }
 
 input#A21 {
-  top: 55.7%;
+  top: 50.7%;
   left: 31.5%;
 }
 
 input#A22 {
-  top: 55.7%;
+  top: 50.7%;
   left: 37.5%;
 }
 
 input#A23 {
-  top: 55.7%;
-  left: 36.7%;
+  top: 50.7%;
+  left: 36.4%;
 }
 
 .modal-wrapper {

@@ -52,21 +52,26 @@ function atribuirNome() {
 }
 
 function showModal(target) {
-  assentos.map((a) => {
-    if (a.id == target.id) {
-      if (a.reservado) {
-        return alert(`Assento já reservado por ${a.nome}`);
-      }
+    if (target.id == "motorista") {
+        return alert('Esse é o assento do motorista. Deseja trabalhar conosco? envie seu currículo!');
 
-      activeSeat = target.id;
+    } else {
+        assentos.map((a) => {
+            if (a.id == target.id) {  
+                if (a.reservado) {
+                    return alert(`Assento já reservado por ${a.nome}`);
 
-      if (!/show/.test($modal.className)) {
-        $modal.className += ' show';
+                }
+                activeSeat = target.id;
 
-        $reservarInput.focus();
-      }
+                if (!/show/.test($modal.className)) {
+                $modal.className += ' show';
+
+                $reservarInput.focus();
+                }
+            }
+        });
     }
-  });
 }
 
 function closeModal() {
