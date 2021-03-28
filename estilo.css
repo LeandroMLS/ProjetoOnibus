@@ -1,148 +1,205 @@
 body {
-    background-color:rgba(24, 167, 180, 0.663);
+  background-color: rgba(24, 167, 180, 0.663);
+  position: relative;
+  font-family: sans-serif;
 }
 
 header {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 
 section {
-    background-image: url(Imagens/onibus.jpeg);
-    padding: 10px;
-    width: 200px;
-    height: 450px;
-    border-radius: 10px 10px 10px rgba(0, 0, 0, 0.663);
-    margin: auto;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.76);
+  background-image: url(Imagens/onibus.jpeg);
+  padding: 10px;
+  width: 200px;
+  height: 450px;
+  border-radius: 10px 10px 10px rgba(0, 0, 0, 0.663);
+  margin: auto;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.76);
 }
 
 footer {
-    font: italic;
-    font-size: 16px;
-    text-align: center;
+  font: italic;
+  font-size: 16px;
+  text-align: center;
 }
 
 input {
-    width: 31px;
-    height: 31px;
-    font-size: 11px;
-    background: transparent;
-    position: relative;
-    
+  width: 31px;
+  height: 31px;
+  font-size: 11px;
+  background: transparent;
+  position: relative;
 }
 
 input#A1 {
-    top: 21%;
-    left: 15.5%;
+  top: 21%;
+  left: 15.5%;
 }
 
 input#A2 {
-    top: 21%;
-    left: 14.5%;
+  top: 21%;
+  left: 14.5%;
 }
 
 input#A3 {
-    top: 30.5%;
-    left: -19.9%
+  top: 30.5%;
+  left: -19.9%;
 }
 
 input#A4 {
-    top: 30.5%;
-    left: -20.7%
+  top: 30.5%;
+  left: -20.7%;
 }
 
 input#A5 {
-    top: 30.5%;
-    right: 14.5%;
+  top: 30.5%;
+  right: 14.5%;
 }
 
 input#A6 {
-    top: 23.5%;
-    left: 72%;
+  top: 23.5%;
+  left: 72%;
 }
 
 input#A7 {
-    top: 32.5%;
-    left: -2.5%;
+  top: 32.5%;
+  left: -2.5%;
 }
 
 input#A8 {
-    top: 32.5%;
-    left: -3.3%;
+  top: 32.5%;
+  left: -3.3%;
 }
 
 input#A9 {
-    top: 32.5%;
-    left: 2.5%;
+  top: 32.5%;
+  left: 2.5%;
 }
 
 input#A10 {
-    top: 32.5%;
-    right: -1.8%;
+  top: 32.5%;
+  right: -1.8%;
 }
 
-input#A11{
-    top: 34.5%;
-    left: 14.7%;
+input#A11 {
+  top: 34.5%;
+  left: 14.7%;
 }
 
 input#A12 {
-    top: 34.5%;
-    left: 14%;
+  top: 34.5%;
+  left: 14%;
 }
 
 input#A13 {
-    top: 34.5%;
-    left: 20%;
+  top: 34.5%;
+  left: 20%;
 }
 
 input#A14 {
-    top: 34.5%;
-    left: 19%;
+  top: 34.5%;
+  left: 19%;
 }
 
 input#A15 {
-    top: 43.07%;
-    right: -2%;
+  top: 43.07%;
+  right: -2%;
 }
 
 input#A16 {
-    top: 43.5%;
-    left: 72%;
+  top: 43.5%;
+  left: 72%;
 }
 
 input#A17 {
-    top: 51%;
-    left: 54%;
+  top: 51%;
+  left: 54%;
 }
 
 input#A18 {
-    top: 44.3%;
-    right: 20%;
+  top: 44.3%;
+  right: 20%;
 }
 
 input#A19 {
-    top: 51.7%;
-    right: 37.5%;
+  top: 51.7%;
+  right: 37.5%;
 }
 
 input#A20 {
-    top: 62.5%;
-    right: 55.5%;
+  top: 62.5%;
+  right: 55.5%;
 }
 
 input#A21 {
-    top: 55.7%;
-    left: 31.5%;
+  top: 55.7%;
+  left: 31.5%;
 }
 
 input#A22 {
-    top: 55.7%;
-    left: 37.5%;
+  top: 55.7%;
+  left: 37.5%;
 }
 
 input#A23 {
-    top: 55.7%;
-    left: 36.7%;
+  top: 55.7%;
+  left: 36.7%;
+}
+
+.modal-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    display: none;
+    flex-flow: column;
+    position: absolute;
+    top: 200px;
+    background: white;
+    width: 80%;
+    max-width: 400px;
+    height: 140px;
+    border-radius: 16px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+    padding: 16px;
+}
+
+.modal .form {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal input {
+    width: 50%;
+    border: 1px solid #727272;
+    border-radius: 6px 0px 0px 6px;
+    outline: none;
+    padding-left: 12px;
+    font-size: 16px;
+}
+
+.modal button {
+    padding: 10px;
+    border-radius: 0px 6px 6px 0px;
+    border: none;
+    font-weight: bold;
+    background: #0d6efd;
+    color: #fff;
+}
+
+.assento-reservado {
+    background: red;
 }
