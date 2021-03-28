@@ -53,7 +53,7 @@ function atribuirNome() {
 
 function showModal(target) {
     if (target.id == "motorista") {
-        return alert('Esse é o assento do motorista. Deseja trabalhar conosco? envie seu currículo!');
+      return alert('Esse é o assento do motorista. Deseja trabalhar conosco? envie seu currículo!');
 
     } else {
         assentos.map((a) => {
