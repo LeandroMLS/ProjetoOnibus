@@ -32,7 +32,7 @@ input {
   font-size: 10.3px;
   background: none;
   position: relative;
-  border-color: transparent;
+  border: none;
   border-radius: 3px;
 }
 
