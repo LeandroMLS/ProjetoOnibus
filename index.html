@@ -1,54 +1,131 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reserva de ônibus</title>
-    <link rel="stylesheet" href="estilo.css">
-</head>
-<body>
-    <header>
-        <h1>Reserve seu Assento</h1>
-    </header>
-    <section id="assentos">
-        <input id="A1" type="button" value="A1" onclick="showModal(this)">
-        <input id="A2" type="button" value="A2" onclick="showModal(this)">
-        <input id="A3" type="button" value="A3" onclick="showModal(this)">
-        <input id="A4" type="button" value="A4" onclick="showModal(this)">
-        <input id="A5" type="button" value="A5" onclick="showModal(this)">
-        <input id="A6" type="button" value="A6" onclick="showModal(this)">
-        <input id="A7" type="button" value="A7" onclick="showModal(this)">
-        <input id="A8" type="button" value="A8" onclick="showModal(this)">
-        <input id="A9" type="button" value="A9" onclick="showModal(this)">
-        <input id="A10" type="button" value="A10" onclick="showModal(this)">
-        <input id="A11" type="button" value="A11" onclick="showModal(this)">
-        <input id="A12" type="button" value="A12" onclick="showModal(this)">
-        <input id="A13" type="button" value="A13" onclick="showModal(this)">
-        <input id="A14" type="button" value="A14" onclick="showModal(this)">
-        <input id="A15" type="button" value="A15" onclick="showModal(this)">
-        <input id="A16" type="button" value="A16" onclick="showModal(this)">
-        <input id="A17" type="button" value="A17" onclick="showModal(this)">
-        <input id="A18" type="button" value="A18" onclick="showModal(this)">
-        <input id="A19" type="button" value="A19" onclick="showModal(this)">
-        <input id="A20" type="button" value="A20" onclick="showModal(this)">
-        <input id="A21" type="button" value="A21" onclick="showModal(this)">
-        <input id="A22" type="button" value="A22" onclick="showModal(this)">
-        <input id="A23" type="button" value="A23" onclick="showModal(this)">
-        <input id='motorista' type="button" value="" onclick="alert('Esse é o assento do motorista. Deseja trabalhar conosco? envie seu currículo!')">
-    </section>
-    <div class="modal-wrapper">
-        <div class="modal">
-            <span>Digite o nome de quem está reservando</span>
-            <div class="form">
-                <input placeholder="Nome" id="nome-input" type="text" />
-                <button onclick="atribuirNome()" id="nome-submit">Reservar</button>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Reserva de ônibus</title>
+        <link rel="stylesheet" href="estilo.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Reserve seu Assento</h1>
+        </header>
+        <section id="assentos">
+            <input id="A1" type="button" value="A1" onclick="showModal(this)" />
+            <input id="A2" type="button" value="A2" onclick="showModal(this)" />
+            <input id="A3" type="button" value="A3" onclick="showModal(this)" />
+            <input id="A4" type="button" value="A4" onclick="showModal(this)" />
+            <input id="A5" type="button" value="A5" onclick="showModal(this)" />
+            <input id="A6" type="button" value="A6" onclick="showModal(this)" />
+            <input id="A7" type="button" value="A7" onclick="showModal(this)" />
+            <input id="A8" type="button" value="A8" onclick="showModal(this)" />
+            <input id="A9" type="button" value="A9" onclick="showModal(this)" />
+            <input
+                id="A10"
+                type="button"
+                value="A10"
+                onclick="showModal(this)"
+            />
+            <input
+                id="A11"
+                type="button"
+                value="A11"
+                onclick="showModal(this)"
+            />
+            <input
+                id="A12"
+                type="button"
+                value="A12"
+                onclick="showModal(this)"
+            />
+            <input
+                id="A13"
+                type="button"
+                value="A13"
+                onclick="showModal(this)"
+            />
+            <input
+                id="A14"
+                type="button"
+                value="A14"
+                onclick="showModal(this)"
+            />
+            <input
+                id="A15"
+                type="button"
+                value="A15"
+                onclick="showModal(this)"
+            />
+            <input
+                id="A16"
+                type="button"
+                value="A16"
+                onclick="showModal(this)"
+            />
+            <input
+                id="A17"
+                type="button"
+                value="A17"
+                onclick="showModal(this)"
+            />
+            <input
+                id="A18"
+                type="button"
+                value="A18"
+                onclick="showModal(this)"
+            />
+            <input
+                id="A19"
+                type="button"
+                value="A19"
+                onclick="showModal(this)"
+            />
+            <input
+                id="A20"
+                type="button"
+                value="A20"
+                onclick="showModal(this)"
+            />
+            <input
+                id="A21"
+                type="button"
+                value="A21"
+                onclick="showModal(this)"
+            />
+            <input
+                id="A22"
+                type="button"
+                value="A22"
+                onclick="showModal(this)"
+            />
+            <input
+                id="A23"
+                type="button"
+                value="A23"
+                onclick="showModal(this)"
+            />
+            <input
+                id="motorista"
+                type="button"
+                value=""
+                onclick="alert('Esse é o assento do motorista. Deseja trabalhar conosco? envie seu currículo!')"
+            />
+        </section>
+        <div class="modal-wrapper">
+            <div class="modal">
+                <span>Digite o nome de quem está reservando</span>
+                <div class="form">
+                    <input placeholder="Nome" id="nome-input" type="text" />
+                    <button onclick="atribuirNome()" id="nome-submit">
+                        Reservar
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-    <footer>
-        <p>Desafio do Luan</p>
-    </footer>
-    <script src="script.js"></script>
-</body>
+        <footer>
+            <p>Desafio do Luan</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
 </html>
